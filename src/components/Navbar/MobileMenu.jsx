@@ -1,6 +1,5 @@
 "use client";
 import React, { useState } from "react";
-import { MediumFont } from "@/utils/fonts";
 import Image from "next/image";
 import Link from "next/link";
 import { FiMenu, FiX } from "react-icons/fi";
@@ -44,14 +43,14 @@ function MobileMenu() {
             />
           </Link>
           <Link
-            href="/why"
+            href="/why-realtern"
             className="menu-item text-xl"
             onClick={() => setIsOpen(false)}
           >
             Why Realtern
           </Link>
           <Link
-            href="/Community"
+            href="/community"
             className="menu-item text-xl"
             onClick={() => setIsOpen(false)}
           >

@@ -78,7 +78,7 @@ function LgNavbar() {
             </div>
             <div className="hidden md:flex gap-x-4 mx-auto text-[19px]">
               <Link
-                href="/why"
+                href="/why-realtern"
                 className={`menu-item hover:text-white ${hovered ? "text-[#4A5FF7]" : ""}`}
                 onMouseEnter={() => {
                   setHovered(true);
@@ -88,7 +88,7 @@ function LgNavbar() {
                 Why Realtern
               </Link>
               <Link
-                href="/Community"
+                href="/community"
                 className={`menu-item hover:text-white ${hovered ? "text-[#4A5FF7]" : ""}`}
                 onMouseEnter={() => {
                   setHovered(true);
@@ -98,7 +98,7 @@ function LgNavbar() {
                 Community
               </Link>
               <Link
-                href="/why"
+                href="/common-questions"
                 className={`menu-item hover:text-white ${hovered ? "text-[#4A5FF7]" : ""}`}
                 onMouseEnter={() => {
                   setHovered(true);
