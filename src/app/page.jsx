@@ -1,11 +1,17 @@
-import Heading from "@/components/Landing/Heading"
+import Heading from "@/components/Landing/Heading";
+import Manifesto from "@/components/Landing/Manifesto";
+import NewWay from "@/components/Landing/NewWay";
+import Tagline from "@/components/Landing/Tagline";
 
 const Home = () => {
   return (
-    <div className="text-red-500">
+    <>
       <Heading />
-    </div >
-  )
-}
+      <NewWay />
+      <Manifesto />
+      <Tagline />
+    </>
+  );
+};
 
-export default Home
+export default Home;

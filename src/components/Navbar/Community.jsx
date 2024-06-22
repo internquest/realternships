@@ -1,9 +1,5 @@
 const CommunityMenu = () => {
-    return (
-        <div>
-            CommunityMenu
-        </div>
-    )
-}
+  return <div>CommunityMenu</div>;
+};
 
-export default CommunityMenu
+export default CommunityMenu;

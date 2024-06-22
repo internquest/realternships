@@ -2,6 +2,7 @@ import { RegularFont } from "@/utils/fonts";
 import "./globals.css";
 import LgNavbar from "@/components/Navbar/LgNavbar";
 import MobileMenu from "@/components/Navbar/MobileMenu";
+import Footer from "@/components/Footer";
 
 export const metadata = {
   title: "Create Next App",
@@ -18,9 +19,8 @@ export default function RootLayout({ children }) {
           </div>
           <LgNavbar />
         </div>
-        <div className="z-10">
-          {children}
-        </div>
+        <div className="z-10">{children}</div>
+        <Footer />
       </body>
     </html>
   );

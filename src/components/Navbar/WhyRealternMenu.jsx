@@ -1,9 +1,5 @@
 const WhyRealternMenu = () => {
-    return (
-        <div>
-            WhyRealternMenu
-        </div>
-    )
-}
+  return <div>WhyRealternMenu</div>;
+};
 
-export default WhyRealternMenu
+export default WhyRealternMenu;

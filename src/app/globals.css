@@ -2,91 +2,96 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
 .w-web {
-    width: -webkit-fill-available;
+  width: -webkit-fill-available;
 }
 
 .menu-item {
-    padding: 5px 10px;
-    border-radius: 100vw;
-    transition: all 200ms;
+  padding: 5px 10px;
+  border-radius: 100vw;
+  transition: all 200ms;
 }
 
 .menu-item:hover {
-    background: #4A5FF7;
-    cursor: pointer;
+  background: #4a5ff7;
+  cursor: pointer;
 }
 
-
 #navdata {
-    position: absolute;
-    left: 0;
-    right: 0;
-    padding: 120px 40px 20px 40px;
-    border-radius: 50px;
-    transition: all 500ms;
-    max-width: 1400px;
-    margin: auto;
+  position: absolute;
+  left: 0;
+  right: 0;
+  padding: 120px 40px 20px 40px;
+  transition: all 500ms;
+  max-width: 1400px;
+  margin: auto;
 }
 
 @media (max-width: 768px) {
-    #navdata {
-        display: none;
-    }
+  #navdata {
+    display: none;
+  }
 
-    .navdata-top {
-        display: none;
-    }
+  .navdata-top {
+    display: none;
+  }
 
-    .navdata-bottom {
-        display: none;
-    }
+  .navdata-bottom {
+    display: none;
+  }
 }
 
 .navdata-top {
-    top: 20px;
-    position: absolute;
-    left: 0;
-    right: 0;
-    height: 100px;
-    border-radius: 50px;
-    padding: 10px;
-    background: rgb(255, 255, 255);
-    transition: all 200ms;
+  top: 20px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 100px;
+  border-radius: 30px;
+  padding: 10px;
+  background: rgb(255, 255, 255);
+  transition: all 200ms;
 }
 
 .navdata-bottom {
-    position: absolute;
-    left: 0;
-    right: 0;
-    height: 300px;
-    border-radius: 50px;
-    background: white;
-    transition: all 400ms;
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 300px;
+  border-radius: 30px;
+  background: white;
+  transition: all 400ms;
 }
 
 .bg-blur::before {
-    content: "";
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    animation: blur 400ms forwards;
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  animation: blur 400ms forwards;
 }
 
 @keyframes blur {
-    from {
-        backdrop-filter: blur(0px);
-        background: transparent;
-    }
+  from {
+    backdrop-filter: blur(0px);
+    background: transparent;
+  }
 
-    50% {
-        backdrop-filter: blur(10px);
-    }
+  50% {
+    backdrop-filter: blur(10px);
+  }
 
-    to {
-        backdrop-filter: blur(10px);
-        background: rgba(255, 255, 255, 0.29);
-    }
+  to {
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.29);
+  }
 }
