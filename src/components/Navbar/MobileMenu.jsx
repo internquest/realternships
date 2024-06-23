@@ -10,7 +10,7 @@ function MobileMenu() {
 
   return (
     <div className="flex items-center justify-center px-4">
-      <div className="fixed top-11 z-50 bg-black/30 backdrop-blur-lg bg-opacity-25 h-max py-3 pl-3 sm:pl-8 pr-3 text-white flex items-center justify-between mx-auto rounded-full w-[95%]">
+      <div className="fixed top-11 z-50 mx-auto flex h-max w-[95%] items-center justify-between rounded-full bg-black/30 bg-opacity-25 py-3 pl-3 pr-3 text-white backdrop-blur-lg sm:pl-8">
         <div className="flex items-center justify-center">
           <Link href="/">
             <Image
@@ -18,7 +18,7 @@ function MobileMenu() {
               alt="logo"
               width={1200}
               height={1200}
-              className="w-28 sm:w-40 h-6 sm:h-8 object-contain"
+              className="h-6 w-28 object-contain sm:h-8 sm:w-40"
             />
           </Link>
         </div>
@@ -32,14 +32,14 @@ function MobileMenu() {
         </div>
       </div>
       {isOpen && (
-        <div className="fixed inset-0 bg-black/90 text-white flex flex-col items-center justify-center gap-y-8 pt-20 animate-slide-down z-40">
+        <div className="fixed inset-0 z-40 flex animate-slide-down flex-col items-center justify-center gap-y-8 bg-black/90 pt-20 text-white">
           <Link href="/" onClick={() => setIsOpen(false)}>
             <Image
               src={whiteLogo}
               alt="logo"
               width={1200}
               height={1200}
-              className="w-40 h-10 object-contain mb-8"
+              className="mb-8 h-10 w-40 object-contain"
             />
           </Link>
           <Link

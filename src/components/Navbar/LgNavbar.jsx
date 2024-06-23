@@ -25,8 +25,8 @@ function LgNavbar() {
   return (
     <>
       <div className={hovered ? "bg-blur" : ""}></div>
-      <div className="flex justify-center items-center">
-        <div className={`fixed top-0 z-50 pt-6 lg:pt-12 w-web max-w-[1300px]`}>
+      <div className="flex items-center justify-center">
+        <div className={`w-web fixed top-0 z-50 max-w-[1300px] pt-6 lg:pt-12`}>
           <div
             className="navdata-top"
             onMouseLeave={() => setHovered(false)}
@@ -53,7 +53,7 @@ function LgNavbar() {
             {displayData}
           </div>
           <div
-            className={`w-[94%] hidden md:flex py-3 pl-3 sm:pl-8 pr-3 text-white items-center justify-between mx-auto rounded-full absolute inset-x-0 ${MediumFont.className} ${hovered ? "bg-[#F7F6F2]" : "bg-black/30 backdrop-blur-lg bg-opacity-25 h-max"} `}
+            className={`absolute inset-x-0 mx-auto hidden w-[94%] items-center justify-between rounded-full py-3 pl-3 pr-3 text-white sm:pl-8 md:flex ${MediumFont.className} ${hovered ? "bg-[#F7F6F2]" : "h-max bg-black/30 bg-opacity-25 backdrop-blur-lg"} `}
           >
             <div className="flex items-center justify-center">
               <Link href="/">
@@ -63,7 +63,7 @@ function LgNavbar() {
                     alt="photo"
                     width={1200}
                     height={1200}
-                    className="w-28 sm:w-40 h-6 sm:h-8 object-contain"
+                    className="h-6 w-28 object-contain sm:h-8 sm:w-40"
                   />
                 ) : (
                   <Image
@@ -71,12 +71,12 @@ function LgNavbar() {
                     alt="photo"
                     width={1200}
                     height={1200}
-                    className="w-28 sm:w-40 h-6 sm:h-8 object-contain"
+                    className="h-6 w-28 object-contain sm:h-8 sm:w-40"
                   />
                 )}
               </Link>
             </div>
-            <div className="hidden md:flex gap-x-4 mx-auto text-[19px]">
+            <div className="mx-auto hidden gap-x-4 text-[19px] md:flex">
               <Link
                 href="/why-realtern"
                 className={`menu-item hover:text-white ${hovered ? "text-[#4A5FF7]" : ""}`}
@@ -109,17 +109,17 @@ function LgNavbar() {
               </Link>
             </div>
             <div className="hidden lg:block">
-              <button className=" group ">
+              <button className="group">
                 <div
-                  className={`w-max rounded-full flex items-center justify-center gap-x-4 sm:gap-x-6 cursor-pointer p-2 bg-white`}
+                  className={`flex w-max cursor-pointer items-center justify-center gap-x-4 rounded-full bg-white p-2 sm:gap-x-6`}
                 >
                   <span
-                    className={`text-base sm:text-xl font-medium pl-2 sm:pl-6 text-[#4A5FF7] group-hover:text-[#303474]`}
+                    className={`pl-2 text-base font-medium text-[#4A5FF7] group-hover:text-[#303474] sm:pl-6 sm:text-xl`}
                   >
                     Contact Sales
                   </span>{" "}
                   <div
-                    className={`w-8 sm:w-10 h-8 sm:h-10 rounded-full flex items-center justify-center text-white bg-[#4A5FF7] group-hover:bg-[#303474] text-xl`}
+                    className={`flex h-8 w-8 items-center justify-center rounded-full bg-[#4A5FF7] text-xl text-white group-hover:bg-[#303474] sm:h-10 sm:w-10`}
                   >
                     <FaArrowRightLong />
                   </div>
