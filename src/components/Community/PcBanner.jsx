@@ -4,7 +4,7 @@ import { motion, useScroll, useSpring, useTransform } from "framer-motion";
 import { MediumFont } from "@/utils/fonts";
 
 const PcBanner = () => {
-  const textRef = useRef < HTMLElement > null;
+  const textRef = useRef(null);
   const { scrollYProgress } = useScroll({ target: textRef });
   const y1 = useTransform(scrollYProgress, [0, 1], [100, 600]);
   const y2 = useTransform(scrollYProgress, [0, 1], [450, 50]);

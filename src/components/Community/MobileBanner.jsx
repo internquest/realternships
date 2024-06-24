@@ -3,7 +3,7 @@ import React, { useRef } from "react";
 import { motion, useScroll, useSpring, useTransform } from "framer-motion";
 
 const MobileBanner = () => {
-  const textRef = useRef < HTMLElement > null;
+  const textRef = useRef(null);
   const { scrollYProgress } = useScroll({ target: textRef });
   const x1 = useTransform(scrollYProgress, [0, 1], [-200, 200]);
   const x2 = useTransform(scrollYProgress, [0, 1], [200, -200]);
