@@ -1,12 +1,12 @@
-import Hero from "@/components/frame4/Hero"
-import StartupInfo from "@/components/frame4/StartupInfo"
+import Hero from "@/components/frame4/Hero";
+import StartupInfo from "@/components/frame4/StartupInfo";
 const StartupGlimpse = () => {
-    return (
-        <>
-            <Hero />
-            <StartupInfo />
-        </>
-    )
-}
+  return (
+    <>
+      <Hero />
+      <StartupInfo />
+    </>
+  );
+};
 
-export default StartupGlimpse
+export default StartupGlimpse;
