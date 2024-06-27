@@ -41,7 +41,7 @@ const AccordionElements = () => {
     setOpenIndex(index === openIndex ? null : index);
   };
   return (
-    <div className="mx-auto max-w-[1170px] -translate-y-28 rounded-[30px] bg-white px-16 py-6">
+    <div className="mx-auto max-w-[1170px] -translate-y-28 rounded-[30px] bg-white px-4 md:px-16 md:py-6">
       {items.map((item, index) => (
         <div
           key={index}
@@ -49,10 +49,10 @@ const AccordionElements = () => {
         >
           <button
             onClick={() => handleClick(index)}
-            className={`flex w-full justify-between px-4 py-2 text-left text-[40px] ${item.titleColor} ${SemiBoldFont.className}`}
+            className={`flex w-full justify-between px-4 py-2 text-left text-[27px] md:text-[40px] ${item.titleColor} ${SemiBoldFont.className}`}
           >
             {item.title}
-            <span className="ml-2 rounded-full bg-[#4A5FF7] p-3">
+            <span className="ml-2 rounded-full bg-[#4A5FF7] p-1 md:p-3">
               {openIndex === index ? (
                 <svg
                   width="24"
@@ -78,7 +78,7 @@ const AccordionElements = () => {
           </button>
           {openIndex === index && (
             <div
-              className={`px-4 py-2 text-[24px] leading-[2.5rem] text-[#251729BF] ${MediumFont.className} max-w-[950px]`}
+              className={`px-4 py-2 text-[21px] leading-[2.2rem] text-[#251729BF] md:text-[24px] md:leading-[2.5rem] ${MediumFont.className} max-w-[950px]`}
             >
               {item.content}
             </div>

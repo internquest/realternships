@@ -1,4 +1,3 @@
-"use client";
 import { SemiBoldFont, MediumFont } from "@/utils/fonts";
 import Marquee from "react-fast-marquee";
 const content = ["Learn", "Experience", "Thrive", "Solve", "Build", "Innovate"];
