@@ -1,9 +1,9 @@
 import { MediumFont } from "@/utils/fonts";
 
-const Header = () => {
+const ThroughoutJourney = () => {
   return (
     <div className="min-h-screen bg-[#2F09EF]/70 px-4 pb-32">
-      <div className="mx-auto max-w-[815px] pt-32 md:pt-44 md:text-center">
+      <div className="mx-auto max-w-[815px] pt-12 md:pt-24 md:text-center">
         <p
           className={`${MediumFont.className} text-[23px] leading-[2.5rem] text-white md:text-[28px] md:leading-[2.8rem]`}
         >
@@ -24,4 +24,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default ThroughoutJourney;

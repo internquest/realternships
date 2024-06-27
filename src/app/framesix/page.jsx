@@ -1,10 +1,12 @@
-import Header from "@/components/FrameSix/Header";
+import Hero from "@/components/FrameSix/Hero";
 import RealternJourney from "@/components/FrameSix/RealternJourney";
+import ThroughoutJourney from "@/components/FrameSix/ThroughoutJourney";
 
 const FrameSix = () => {
   return (
     <div>
-      <Header />
+      <Hero />
+      <ThroughoutJourney />
       <RealternJourney />
     </div>
   );
