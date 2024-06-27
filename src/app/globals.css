@@ -107,7 +107,7 @@
 .custom-pagination .swiper-pagination-bullet {
   width: 10px;
   height: 10px;
-  background: #D3D3D3;
+  background: #d3d3d3;
   opacity: 1;
   border-radius: 50%;
   transition: all 0.3s ease;
@@ -116,7 +116,7 @@
 .custom-pagination .swiper-pagination-bullet-active {
   width: 40px;
   height: 10px;
-  background: #FFFFFF;
+  background: #ffffff;
   border-radius: 10px;
 }
 
@@ -131,7 +131,7 @@
 .custom-pagination-second .swiper-pagination-bullet {
   width: 10px;
   height: 10px;
-  background: #2F09EFBF;
+  background: #2f09efbf;
   opacity: 1;
   border-radius: 50%;
   transition: all 0.3s ease;
@@ -140,6 +140,6 @@
 .custom-pagination-second .swiper-pagination-bullet-active {
   width: 40px;
   height: 10px;
-  background: #2F09EFBF;
+  background: #2f09efbf;
   border-radius: 10px;
 }

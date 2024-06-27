@@ -1,13 +1,13 @@
-import Header from "@/components/FrameSix/Header"
-import RealternJourney from "@/components/FrameSix/RealternJourney"
+import Header from "@/components/FrameSix/Header";
+import RealternJourney from "@/components/FrameSix/RealternJourney";
 
 const FrameSix = () => {
-    return (
-        <div>
-            <Header />
-            <RealternJourney />
-        </div>
-    )
-}
+  return (
+    <div>
+      <Header />
+      <RealternJourney />
+    </div>
+  );
+};
 
-export default FrameSix
+export default FrameSix;

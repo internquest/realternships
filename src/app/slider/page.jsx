@@ -1,16 +1,15 @@
-import FirstSlider from "@/components/Slider/FirstSlider"
-import SecondSlider from "@/components/Slider/SecondSlider"
-import ThirdSlider from "@/components/Slider/ThirdSlider"
-
+import FirstSlider from "@/components/Slider/FirstSlider";
+import SecondSlider from "@/components/Slider/SecondSlider";
+import ThirdSlider from "@/components/Slider/ThirdSlider";
 
 const SliderPage = () => {
-    return (
-        <>
-            <FirstSlider />
-            <SecondSlider />
-            <ThirdSlider />
-        </>
-    )
-}
+  return (
+    <>
+      <FirstSlider />
+      <SecondSlider />
+      <ThirdSlider />
+    </>
+  );
+};
 
-export default SliderPage
+export default SliderPage;
