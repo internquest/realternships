@@ -119,3 +119,27 @@
   background: #FFFFFF;
   border-radius: 10px;
 }
+
+.custom-pagination-second {
+  position: relative;
+  top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.custom-pagination-second .swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  background: #2F09EFBF;
+  opacity: 1;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+.custom-pagination-second .swiper-pagination-bullet-active {
+  width: 40px;
+  height: 10px;
+  background: #2F09EFBF;
+  border-radius: 10px;
+}
