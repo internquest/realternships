@@ -4,10 +4,10 @@ import { MediumFont } from "@/utils/fonts";
 
 const SecuringInternship = () => {
   return (
-    <div className="relative flex h-max w-full items-center justify-end py-0 pt-32 sm:py-40 sm:pt-40 2xl:justify-center">
-      <div className="flex w-full flex-col items-center justify-between gap-10 xl:w-[1225px] xl:flex-row">
+    <div className="relative flex h-max w-full items-center justify-end py-0 pt-32 sm:py-40 sm:pt-40 pl-0 xl:pl-32 2xl:justify-center">
+      <div className="flex w-full flex-col items-center justify-between gap-10  xl:flex-row">
         <p
-          className={`w-full px-[9.5px] text-center text-xl leading-9 text-[#2C2C2C]/80 sm:px-14 sm:text-[22.2px] sm:leading-10 lg:px-20 xl:w-[520px] xl:px-0 xl:text-left ${MediumFont.className}`}
+          className={`w-full px-[9.5px] text-center text-xl leading-9 text-[#2C2C2C]/80 sm:px-14 sm:text-[22.2px] sm:leading-[3rem] lg:px-20 xl:w-[520px] xl:px-0 xl:text-left ${MediumFont.className}`}
         >
           Securing an internship today often means proving that you can hit the
           ground running. Companies give priority to applicants with previous

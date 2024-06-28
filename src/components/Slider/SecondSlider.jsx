@@ -28,45 +28,44 @@ const SecondSlider = () => {
         >
           <SwiperSlide>
             <div
-              className={`flex h-[380px] flex-col ${activeIndex === 0 ? "justify-between bg-[#2F09EFBF]" : "justify-end bg-[#F8F8FE]"} rounded-[10px] p-8`}
+              className={`flex h-[400px] flex-col ${activeIndex === 0 ? "justify-between bg-[#2F09EFBF]" : "justify-end bg-[#F8F8FE]"} rounded-[10px] p-8`}
             >
               <h2
                 className={`w-max rounded-[10px] tracking-[1%] ${SemiBoldFont.className} px-3 py-1 text-[25px] ${activeIndex === 0 ? "bg-[#DDFC9D]" : "bg-none"}`}
               >
-                High Expectations
+                No Experience
               </h2>
               <p
-                className={`${MediumFont.className} text-[20px] leading-[2.1rem] tracking-[1.5%] text-white transition-opacity duration-300 ${activeIndex === 0 ? "opacity-100" : "hidden"}`}
+                className={`${MediumFont.className} text-[20px] leading-[2.1rem] tracking-[1.5%] text-white transition-opacity duration-300 ${activeIndex === 0 ? "" : "hidden"}`}
               >
-                I used to have high expectations believing that I will land my
-                dream job or a prestigious job straight out of college. But the
-                reality is for some it does happen but for most it does not
-                because of lack of experience, and connections.
+                It feels like every job I’m interested in requires experience,
+                but as a student, it’s frustrating because I need a job to get
+                experience, but I need experience to get a job.
               </p>
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div
-              className={`flex h-[380px] flex-col ${activeIndex === 1 ? "justify-between bg-[#2F09EFBF]" : "justify-end bg-[#F8F8FE]"} rounded-[10px] p-8`}
+              className={`flex h-[400px] flex-col ${activeIndex === 1 ? "justify-between bg-[#2F09EFBF]" : "justify-end bg-[#F8F8FE]"} rounded-[10px] p-8`}
             >
               <h2
                 className={`w-max rounded-[10px] tracking-[1%] ${SemiBoldFont.className} px-3 py-1 text-[25px] ${activeIndex === 1 ? "bg-[#DDFC9D]" : "bg-none"}`}
               >
-                High Expectations
+                Competitive Job Market
               </h2>
               <p
-                className={`${MediumFont.className} text-[20px] leading-[2.1rem] tracking-[1.5%] text-white transition-opacity duration-300 ${activeIndex === 1 ? "opacity-100" : "hidden"}`}
+                className={`${MediumFont.className} text-[20px] leading-[2.1rem] tracking-[1.5%] text-white transition-opacity duration-300 ${activeIndex === 1 ? "" : "hidden"}`}
               >
-                I used to have high expectations believing that I will land my
-                dream job or a prestigious job straight out of college. But the
-                reality is for some it does happen but for most it does not
-                because of lack of experience, and connections.
+                The job market is incredibly competitive. For every position I
+                apply for, there are hundreds, sometimes thousands, of other
+                candidates who are just as qualified, if not more. Standing out
+                in such a crowded field is tough.
               </p>
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div
-              className={`flex h-[380px] flex-col ${activeIndex === 2 ? "justify-between bg-[#2F09EFBF]" : "justify-end bg-[#F8F8FE]"} rounded-[10px] p-8`}
+              className={`flex h-[400px] flex-col ${activeIndex === 2 ? "justify-between bg-[#2F09EFBF]" : "justify-end bg-[#F8F8FE]"} rounded-[10px] p-8`}
             >
               <h2
                 className={`w-max rounded-[10px] tracking-[1%] ${SemiBoldFont.className} px-3 py-1 text-[25px] ${activeIndex === 2 ? "bg-[#DDFC9D]" : "bg-none"}`}
@@ -74,26 +73,64 @@ const SecondSlider = () => {
                 High Expectations
               </h2>
               <p
-                className={`${MediumFont.className} text-[20px] leading-[2.1rem] tracking-[1.5%] text-white transition-opacity duration-300 ${activeIndex === 2 ? "opacity-100" : "hidden"}`}
+                className={`${MediumFont.className} text-[20px] leading-[2.1rem] tracking-[1.5%] text-white transition-opacity duration-300 ${activeIndex === 2 ? "" : "hidden"}`}
               >
-                I used to have high expectations believing that I will land my
-                dream job or a prestigious job straight out of college. But the
-                reality is for some it does happen but for most it does not
-                because of lack of experience, and connections.
+                I did a lot of courses, but sometimes it feels like the skills I
+                have aren’t exactly what employers are looking for. There’s
+                often a gap between what I know and what the job
+                descriptions require.
               </p>
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div
-              className={`flex h-[380px] flex-col ${activeIndex === 3 ? "justify-between bg-[#2F09EFBF]" : "justify-end bg-[#F8F8FE]"} rounded-[10px] p-8`}
+              className={`flex h-[400px] flex-col ${activeIndex === 3 ? "justify-between bg-[#2F09EFBF]" : "justify-end bg-[#F8F8FE]"} rounded-[10px] p-8`}
             >
               <h2
                 className={`w-max rounded-[10px] tracking-[1%] ${SemiBoldFont.className} px-3 py-1 text-[25px] ${activeIndex === 3 ? "bg-[#DDFC9D]" : "bg-none"}`}
               >
+                Economic Factors
+              </h2>
+              <p
+                className={`${MediumFont.className} text-[20px] leading-[2.1rem] tracking-[1.5%] text-white transition-opacity duration-300 ${activeIndex === 3 ? "" : "hidden"}`}
+              >
+                The economy plays a big role in job availability. During
+                economic downturns, there are fewer job openings, and it
+                feels like I have to compete even harder for the limited
+                positions available.
+              </p>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div
+              className={`flex h-[400px] flex-col ${activeIndex === 4 ? "justify-between bg-[#2F09EFBF]" : "justify-end bg-[#F8F8FE]"} rounded-[10px] p-8`}
+            >
+              <h2
+                className={`w-max rounded-[10px] tracking-[1%] ${SemiBoldFont.className} px-3 py-1 text-[25px] ${activeIndex === 4 ? "bg-[#DDFC9D]" : "bg-none"}`}
+              >
+                Limited Resources
+              </h2>
+              <p
+                className={`${MediumFont.className} text-[20px] leading-[2.1rem] tracking-[1.5%] text-white transition-opacity duration-300 ${activeIndex === 4 ? "" : "hidden"}`}
+              >
+                Not all students have equal access to career resources. I try
+                to make use of my university’s career services, but sometimes
+                it feels like I’m not getting the personalized help I need to
+                really improve my applications and interviews.
+              </p>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div
+              className={`flex h-[400px] flex-col ${activeIndex === 5 ? "justify-between bg-[#2F09EFBF]" : "justify-end bg-[#F8F8FE]"} rounded-[10px] p-8`}
+            >
+              <h2
+                className={`w-max rounded-[10px] tracking-[1%] ${SemiBoldFont.className} px-3 py-1 text-[25px] ${activeIndex === 5 ? "bg-[#DDFC9D]" : "bg-none"}`}
+              >
                 High Expectations
               </h2>
               <p
-                className={`${MediumFont.className} text-[20px] leading-[2.1rem] tracking-[1.5%] text-white transition-opacity duration-300 ${activeIndex === 3 ? "opacity-100" : "hidden"}`}
+                className={`${MediumFont.className} text-[20px] leading-[2.1rem] tracking-[1.5%] text-white transition-opacity duration-300 ${activeIndex === 5 ? "" : "hidden"}`}
               >
                 I used to have high expectations believing that I will land my
                 dream job or a prestigious job straight out of college. But the

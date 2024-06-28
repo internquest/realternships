@@ -5,7 +5,7 @@ const BlueBanner = () => {
     <div className="relative flex w-full items-center justify-center rounded-b-[30px] bg-white pb-0 pt-[197px] shadow-xl shadow-gray-300/85 sm:pb-44 sm:pt-56 xl:rounded-b-[40px]">
       <div className="relative flex w-full items-center justify-center bg-[#4A5FF6]/90 py-28 lg:mx-28">
         <span
-          className={`leading-45 sm:leading-55 w-[550px] text-center text-2xl text-white lg:w-[750px] ${MediumFont.className} `}
+          className={`leading-[2.4rem] sm:leading-[3rem] max-w-[743px] px-2 text-center text-2xl text-white lg:w-[750px] ${MediumFont.className} `}
         >
           Be a Realtern to gain relevant experience, make meaningful
           contributions, enhance your resume and improve your chances of landing

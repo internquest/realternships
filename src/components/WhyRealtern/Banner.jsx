@@ -2,7 +2,7 @@ const Banner = () => {
   return (
     <div className="relative mt-20 flex w-full items-center justify-center bg-[#F8F7F3] py-36 text-left sm:mt-32 xl:py-28">
       <div className="flex flex-col gap-y-12 text-xl text-[#2C2C2C] sm:w-[44rem] sm:text-2xl">
-        <p className="sm:leadin-[2.6875rem] px-3 pt-4 leading-[2rem] sm:pt-0 md:px-0">
+        <p className="sm:leading-[2.6875rem] px-3 pt-4 leading-[2rem] sm:pt-0 md:px-0">
           Basic projects typically don't address real-world challenges or
           demonstrate how you can apply your skills to solve actual business
           problems

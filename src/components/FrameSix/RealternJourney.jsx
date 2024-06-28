@@ -17,9 +17,9 @@ const RealternJourney = () => {
         <RealMarquee />
       </div>
 
-      <div className="] mx-auto max-w-[842px] px-4 pb-24 text-white">
+      <div className="] mx-auto px-4 pb-24 text-white">
         <p
-          className={`${MediumFont.className} text-[21px] leading-[2.4rem] md:text-center md:text-[24px] md:leading-[2.7rem]`}
+          className={`${MediumFont.className} text-[25px] leading-[2.7rem] md:text-[28px] md:leading-[3rem] max-w-[842px] mx-auto`}
         >
           By becoming a Realtern, you'll not only gain invaluable work
           experience but also become a part of the driving force behind the next

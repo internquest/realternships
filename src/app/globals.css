@@ -78,6 +78,7 @@
   width: 100%;
   height: 100vh;
   animation: blur 400ms forwards;
+  z-index: 20;
 }
 
 @keyframes blur {

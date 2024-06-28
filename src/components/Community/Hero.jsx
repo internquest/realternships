@@ -16,7 +16,7 @@ const Hero = () => {
               Experience Inspire{" "}
               <span className="rounded-xl bg-[#DDFC9D] px-2 py-1">Succeed</span>
             </span>
-            <p className="text-2xl leading-[2.625rem] tracking-tight text-black sm:tracking-normal">
+            <p className="text-2xl leading-[2.625rem] md:leading-[3rem] tracking-tight text-black sm:tracking-normal">
               The Realtern Community is a powerful network of realterns, united
               by their desire to grow, and support each other in achieving their
               ambitious goals.
@@ -33,7 +33,7 @@ const Hero = () => {
           </div>
         </div>
       </div>
-      <div className="mx-auto w-full px-3 pt-14 text-center text-xl leading-[2.25rem] sm:pt-20 sm:leading-[2.5rem] md:w-[48.438rem] md:px-0 xl:pt-40">
+      <div className="mx-auto w-full px-3 pt-14 text-center text-[20px] leading-[2.25rem]  md:leading-[2.8rem] sm:pt-20 sm:leading-[2.5rem] max-w-[762px] md:px-0 xl:pt-28">
         We believe that the power of community is essential for fostering
         growth, inspiration, and success. Our community page is a vibrant hub
         where Realterns can connect, collaborate, and share their experiences
