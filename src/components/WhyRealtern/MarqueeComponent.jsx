@@ -22,20 +22,19 @@ const MarqueeComponent = () => {
       <span className={`text-[2rem] text-[#2C2C2C] ${MediumFont.className}`}>
         You know what, that
       </span>
-      <div className="custom-scrollbar-hide flex w-full -rotate-2 flex-col gap-y-1 overflow-hidden sm:gap-y-3">
+      <div className="custom-scrollbar-hide flex w-full -rotate-2 flex-col overflow-hidden md:gap-y-3">
         <Marquee autoFill pauseOnClick className="flex flex-col text-[#6F71EE]">
           {content1.map((item, i) => (
             <div
               key={i}
-              className={`cursor-pointer select-none px-5 py-2 text-5xl tracking-[0.01em] ${BoldFont.className} ${
-                i % 4 === 0
-                  ? "text-[#5F71F8]/90"
-                  : i % 4 === 1
-                    ? "text-[#5F71F8]/30"
-                    : i % 4 === 2
-                      ? "text-[#5F71F8]/70"
-                      : "text-[#5F71F8]/50"
-              }`}
+              className={`cursor-pointer select-none px-5 py-2 text-[40px] lg:text-[48px] tracking-[0.01em] ${BoldFont.className} ${i % 4 === 0
+                ? "text-[#5F71F8]/90"
+                : i % 4 === 1
+                  ? "text-[#5F71F8]/30"
+                  : i % 4 === 2
+                    ? "text-[#5F71F8]/70"
+                    : "text-[#5F71F8]/50"
+                }`}
             >
               {item}
             </div>
@@ -50,15 +49,14 @@ const MarqueeComponent = () => {
           {content2.map((item, i) => (
             <div
               key={i}
-              className={`cursor-pointer select-none px-5 py-2 text-5xl tracking-[0.01em] ${BoldFont.className} ${
-                i % 4 === 0
-                  ? "text-[#5F71F8]/90"
-                  : i % 4 === 1
-                    ? "text-[#5F71F8]/30"
-                    : i % 4 === 2
-                      ? "text-[#5F71F8]/70"
-                      : "text-[#5F71F8]/50"
-              }`}
+              className={`cursor-pointer select-none px-5 py-2 text-[40px] lg:text-[48px] tracking-[0.01em] ${BoldFont.className} ${i % 4 === 0
+                ? "text-[#5F71F8]/90"
+                : i % 4 === 1
+                  ? "text-[#5F71F8]/30"
+                  : i % 4 === 2
+                    ? "text-[#5F71F8]/70"
+                    : "text-[#5F71F8]/50"
+                }`}
             >
               {item}
             </div>
@@ -68,22 +66,21 @@ const MarqueeComponent = () => {
           {content3.map((item, i) => (
             <div
               key={i}
-              className={`cursor-pointer select-none px-5 py-2 text-5xl tracking-[0.01em] ${BoldFont.className} ${
-                i % 4 === 0
-                  ? "text-[#5F71F8]/90"
-                  : i % 4 === 1
-                    ? "text-[#5F71F8]/30"
-                    : i % 4 === 2
-                      ? "text-[#5F71F8]/70"
-                      : "text-[#5F71F8]/50"
-              }`}
+              className={`cursor-pointer select-none px-5 py-2 text-[40px] lg:text-[48px] tracking-[0.01em] ${BoldFont.className} ${i % 4 === 0
+                ? "text-[#5F71F8]/90"
+                : i % 4 === 1
+                  ? "text-[#5F71F8]/30"
+                  : i % 4 === 2
+                    ? "text-[#5F71F8]/70"
+                    : "text-[#5F71F8]/50"
+                }`}
             >
               {item}
             </div>
           ))}
         </Marquee>
       </div>
-      <span className="mt-4 pl-3 text-2xl text-[#2C2C2C] sm:text-[1.75rem]">
+      <span className="mt-4 pl-3 text-[25px] leading-[2.4rem] text-[#2C2C2C] md:text-[28px] md:leading-[2.8rem]">
         project isn’t gonna help you get into your dream company
       </span>
     </div>

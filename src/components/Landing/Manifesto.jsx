@@ -30,7 +30,7 @@ const Manifesto = () => {
               of the world.
             </span>
             <div
-              className={`flex w-auto flex-col items-start justify-center gap-y-6 text-xl leading-normal text-white sm:gap-y-10 sm:text-2xl sm:leading-[45px] md:w-[650px] lg:w-[896px] ${MediumFont.className}`}
+              className={`flex w-auto flex-col items-start justify-center gap-y-6 text-[20px] leading-[2.4rem] text-white sm:gap-y-10 sm:text-2xl sm:leading-[45px] md:w-[650px] lg:w-[896px] ${MediumFont.className}`}
             >
               <p>
                 Coding is the language of creation, enabling us to build the
