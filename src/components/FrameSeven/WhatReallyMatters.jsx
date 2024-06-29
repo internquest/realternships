@@ -3,7 +3,7 @@ import { MediumFont } from "@/utils/fonts";
 const WhatReallyMatters = () => {
   return (
     <div className="min-h-screen bg-[#E6E8FE]">
-      <div className="flex flex-col items-center justify-center px-4 py-12 md:py-20">
+      <div className="flex flex-col items-center justify-center px-[5px] sm:px-4 py-12 md:py-20">
         <h1
           className={`${MediumFont.className} text-[24px] text-[#2C2C2C] sm:text-[32px] lg:text-[36px]`}
         >
@@ -11,7 +11,7 @@ const WhatReallyMatters = () => {
         </h1>
 
         <div className="mx-auto mt-8 h-full w-full max-w-[900px] rounded-[20px] bg-[#4A5FF7] text-white md:mt-16">
-          <div className="border-b-[5px] border-white/50 p-8">
+          <div className="border-b-[5px] border-white/50 py-6 px-4 md:p-8">
             <h3
               className={`${MediumFont.className} text-[22px] sm:text-[24px] lg:text-[28px]`}
             >
@@ -30,7 +30,7 @@ const WhatReallyMatters = () => {
               </li>
             </ol>
           </div>
-          <div className="p-8">
+          <div className="py-6 px-4 md:p-8">
             <h3
               className={`${MediumFont.className} text-[22px] sm:text-[24px] lg:text-[28px]`}
             >

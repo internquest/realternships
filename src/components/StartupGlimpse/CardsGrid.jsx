@@ -2,7 +2,7 @@ import { MediumFont } from "@/utils/fonts";
 
 const CardsGrid = () => {
   return (
-    <div className="mx-auto max-w-[1100px] px-4 pb-12 md:pb-24">
+    <div className="mx-auto max-w-[1100px] px-[5px] md:px-4 pb-12 md:pb-24">
       <div className="grid min-h-[1100px] gap-4 md:grid-cols-5">
         <div className="flex items-center justify-center rounded-[20px] bg-[#FBD59B] p-6 md:col-span-2 md:row-span-2">
           <div className="flex size-full flex-col justify-between rounded-[5px] bg-white p-6">

@@ -2,7 +2,7 @@ import { MediumFont, BoldFont } from "@/utils/fonts";
 
 const BlueBanner = () => {
   return (
-    <div className="relative flex w-full items-center justify-center rounded-b-[30px] bg-white pb-0 pt-[197px] shadow-xl shadow-gray-300/85 sm:pb-44 sm:pt-56 xl:rounded-b-[40px]">
+    <div className="overflow-hidden relative flex w-full items-center justify-center rounded-b-[30px] bg-white pb-0 pt-[197px] shadow-xl shadow-gray-300/85 sm:pb-44 sm:pt-56 xl:rounded-b-[40px]">
       <div className="relative flex w-full items-center justify-center bg-[#4A5FF6]/90 py-28 lg:mx-28">
         <span
           className={`leading-[2.4rem] sm:leading-[3rem] max-w-[743px] px-2 text-center text-2xl text-white lg:w-[750px] ${MediumFont.className} `}
@@ -17,7 +17,7 @@ const BlueBanner = () => {
         <div className="absolute bottom-0 right-[100px] hidden h-[50px] w-[50px] rounded-full bg-white sm:block"></div>
       </div>
       <span
-        className={`absolute top-[111px] text-8xl text-[#5F71F8]/30 sm:right-[70px] sm:text-9xl lg:right-[182px] ${BoldFont.className}`}
+        className={`absolute top-[97px] sm:top-[111px] text-[88px] text-[#5F71F8]/30 sm:right-[70px] sm:text-9xl lg:right-[182px] ${BoldFont.className}`}
       >
         realtern
       </span>
