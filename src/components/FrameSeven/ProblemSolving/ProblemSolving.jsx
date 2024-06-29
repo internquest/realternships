@@ -3,7 +3,7 @@ import ProblemSolvingAccordion from "./ProblemSolvingAccordion";
 
 const ProblemSolving = () => {
   return (
-    <div className="py-4 px-[5px] sm:p-4">
+    <div className="px-[5px] py-4 sm:p-4">
       <div className="min-h-screen rounded-[20px] bg-[#DDFC9D] pb-12 md:pb-20">
         <div>
           <h1
@@ -13,13 +13,13 @@ const ProblemSolving = () => {
           </h1>
 
           <div
-            className={`mx-auto mt-8 max-w-[850px] rounded-t-[20px] border-[5px] border-[#C5E28C] bg-white px-[4px] md:px-12 pt-8 md:pt-12 md:mt-20 ${MediumFont.className} `}
+            className={`mx-auto mt-8 max-w-[850px] rounded-t-[20px] border-[5px] border-[#C5E28C] bg-white px-[4px] pt-8 md:mt-20 md:px-12 md:pt-12 ${MediumFont.className} `}
           >
-            <div className="mx-auto max-w-[620px] rounded-[10px] bg-[#4E51FD] p-4 md:p-8 text-[21px] leading-[2.7rem] text-white md:text-[24px] md:leading-[3rem]">
+            <div className="mx-auto max-w-[620px] rounded-[10px] bg-[#4E51FD] p-4 text-[21px] leading-[2.7rem] text-white md:p-8 md:text-[24px] md:leading-[3rem]">
               Ultimately, the goal of innovation is to improve the lives of
               end-users & is fueled by a relentless desire to solve problems
             </div>
-            <div className="my-8 md:my-12 flex items-center justify-center">
+            <div className="my-8 flex items-center justify-center md:my-12">
               <h2
                 className={`${MediumFont.className} text-[22px] text-[#544D49]`}
               >

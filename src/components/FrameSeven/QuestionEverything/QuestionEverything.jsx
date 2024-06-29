@@ -3,7 +3,7 @@ import QuestionEverythingAccordion from "./QuestionEverythingAccordion";
 
 const QuestionEverything = () => {
   return (
-    <div className="px-[5px] sm:px-4 pb-4">
+    <div className="px-[5px] pb-4 sm:px-4">
       <div className="rounded-[20px] bg-[#8423FE]">
         <div>
           <h1
@@ -13,9 +13,9 @@ const QuestionEverything = () => {
           </h1>
 
           <div
-            className={`mx-auto mt-12 max-w-[850px] rounded-t-[10px] bg-[#FCD69C] px-[4px] md:px-12 pt-12 md:mt-20 md:pt-20 ${MediumFont.className} `}
+            className={`mx-auto mt-12 max-w-[850px] rounded-t-[10px] bg-[#FCD69C] px-[4px] pt-12 md:mt-20 md:px-12 md:pt-20 ${MediumFont.className} `}
           >
-            <div className="mx-auto max-w-[700px] rounded-t-[10px] md:border-[5px] border-[#FAD49B]/50 bg-white p-8 text-[21px] leading-[2.7rem] text-[#544D49] md:text-[24px] md:leading-[3rem]">
+            <div className="mx-auto max-w-[700px] rounded-t-[10px] border-[#FAD49B]/50 bg-white p-8 text-[21px] leading-[2.7rem] text-[#544D49] md:border-[5px] md:text-[24px] md:leading-[3rem]">
               Innovation begins with curiosity. We seek individuals who are not
               afraid to challenge the status quo and ask the tough questions
             </div>

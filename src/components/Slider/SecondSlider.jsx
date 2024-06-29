@@ -77,8 +77,8 @@ const SecondSlider = () => {
               >
                 I did a lot of courses, but sometimes it feels like the skills I
                 have aren’t exactly what employers are looking for. There’s
-                often a gap between what I know and what the job
-                descriptions require.
+                often a gap between what I know and what the job descriptions
+                require.
               </p>
             </div>
           </SwiperSlide>
@@ -95,9 +95,9 @@ const SecondSlider = () => {
                 className={`${MediumFont.className} text-[20px] leading-[2.1rem] tracking-[1.5%] text-white transition-opacity duration-300 ${activeIndex === 3 ? "" : "hidden"}`}
               >
                 The economy plays a big role in job availability. During
-                economic downturns, there are fewer job openings, and it
-                feels like I have to compete even harder for the limited
-                positions available.
+                economic downturns, there are fewer job openings, and it feels
+                like I have to compete even harder for the limited positions
+                available.
               </p>
             </div>
           </SwiperSlide>
@@ -113,9 +113,9 @@ const SecondSlider = () => {
               <p
                 className={`${MediumFont.className} text-[20px] leading-[2.1rem] tracking-[1.5%] text-white transition-opacity duration-300 ${activeIndex === 4 ? "" : "hidden"}`}
               >
-                Not all students have equal access to career resources. I try
-                to make use of my university’s career services, but sometimes
-                it feels like I’m not getting the personalized help I need to
+                Not all students have equal access to career resources. I try to
+                make use of my university’s career services, but sometimes it
+                feels like I’m not getting the personalized help I need to
                 really improve my applications and interviews.
               </p>
             </div>

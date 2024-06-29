@@ -35,22 +35,27 @@ function MobileMenu() {
         <div className="flex items-center">
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className="text-[#4A5FF6] bg-white p-2 rounded-full focus:outline-none"
+            className="rounded-full bg-white p-2 text-[#4A5FF6] focus:outline-none"
           >
             {isOpen ? <FiX size={22} /> : <FiMenu size={22} />}
           </button>
         </div>
       </div>
       {isOpen && (
-        <div className="fixed overflow-auto inset-0 z-40 flex animate-slide-down flex-col px-6 gap-y-4 bg-white pt-32 pb-4">
+        <div className="fixed inset-0 z-40 flex animate-slide-down flex-col gap-y-4 overflow-auto bg-white px-6 pb-4 pt-32">
           <div
-            className={`px-6 py-5 rounded-[35px]  bg-[#E6E8FE] text-xl flex flex-col justify-between`}
+            className={`flex flex-col justify-between rounded-[35px] bg-[#E6E8FE] px-6 py-5 text-xl`}
           >
-            <div className="flex flex-row justify-between items-center" onClick={() => toggleDropdown("why-realtern")}>
-              <Link href={'/why-realtern'} >
-                Why Realtern
-              </Link>
-              {openDropdown === "why-realtern" ? <FiChevronUp color="#505050CC" /> : <FiChevronDown color="#505050CC" />}
+            <div
+              className="flex flex-row items-center justify-between"
+              onClick={() => toggleDropdown("why-realtern")}
+            >
+              <Link href={"/why-realtern"}>Why Realtern</Link>
+              {openDropdown === "why-realtern" ? (
+                <FiChevronUp color="#505050CC" />
+              ) : (
+                <FiChevronDown color="#505050CC" />
+              )}
             </div>
             {openDropdown === "why-realtern" && (
               <>
@@ -60,13 +65,18 @@ function MobileMenu() {
           </div>
           <div>
             <div
-              className={`px-6 py-5 rounded-[35px]  bg-[#E6E8FE] text-xl flex flex-col justify-between`}
+              className={`flex flex-col justify-between rounded-[35px] bg-[#E6E8FE] px-6 py-5 text-xl`}
             >
-              <div className="flex flex-row justify-between items-center" onClick={() => toggleDropdown("community")}>
-                <Link href={'/community'} >
-                  Community
-                </Link>
-                {openDropdown === "community" ? <FiChevronUp color="#505050CC" /> : <FiChevronDown color="#505050CC" />}
+              <div
+                className="flex flex-row items-center justify-between"
+                onClick={() => toggleDropdown("community")}
+              >
+                <Link href={"/community"}>Community</Link>
+                {openDropdown === "community" ? (
+                  <FiChevronUp color="#505050CC" />
+                ) : (
+                  <FiChevronDown color="#505050CC" />
+                )}
               </div>
               {openDropdown === "community" && (
                 <>
@@ -76,13 +86,18 @@ function MobileMenu() {
             </div>
           </div>
           <div
-            className={`px-6 py-5 rounded-[35px]  bg-[#E6E8FE] text-xl flex flex-col justify-between`}
+            className={`flex flex-col justify-between rounded-[35px] bg-[#E6E8FE] px-6 py-5 text-xl`}
           >
-            <div className="flex flex-row justify-between items-center" onClick={() => toggleDropdown("startup-glimpse")}>
-              <Link href={'/startup-glimpse'} >
-                Startup Glimpse
-              </Link>
-              {openDropdown === "startup-glimpse" ? <FiChevronUp color="#505050CC" /> : <FiChevronDown color="#505050CC" />}
+            <div
+              className="flex flex-row items-center justify-between"
+              onClick={() => toggleDropdown("startup-glimpse")}
+            >
+              <Link href={"/startup-glimpse"}>Startup Glimpse</Link>
+              {openDropdown === "startup-glimpse" ? (
+                <FiChevronUp color="#505050CC" />
+              ) : (
+                <FiChevronDown color="#505050CC" />
+              )}
             </div>
             {openDropdown === "startup-glimpse" && (
               <>

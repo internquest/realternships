@@ -11,7 +11,7 @@ const Features = () => {
             >
               Connect and Collaborate
             </span>
-            <p className="text-xl leading-[2.375rem] md:leading-[2.6rem] text-black">
+            <p className="text-xl leading-[2.375rem] text-black md:leading-[2.6rem]">
               From discussion forums and project showcases to virtual networking
               events and peer mentorship opportunities, you'll have the chance
               to engage with a diverse group of driven students and
@@ -28,7 +28,7 @@ const Features = () => {
             >
               Learn & Grow
             </span>
-            <p className="text-xl leading-[2.375rem] md:leading-[2.6rem] text-black">
+            <p className="text-xl leading-[2.375rem] text-black md:leading-[2.6rem]">
               Personal and professional growth are at the heart of the Realtern
               experience, and we offer a wealth of resources to support your
               development. Access exclusive webinars, workshops, and
@@ -49,7 +49,7 @@ const Features = () => {
             >
               Share your journey
             </span>
-            <p className="text-xl leading-[2.375rem] md:leading-[2.6rem] text-black">
+            <p className="text-xl leading-[2.375rem] text-black md:leading-[2.6rem]">
               As a Realtern, you're on a unique journey, working alongside
               companies to tackle challenging real-world projects and contribute
               your own unique ideas. Share your experiences, successes, and
@@ -66,7 +66,7 @@ const Features = () => {
             >
               Celebrate Success
             </span>
-            <p className="leading-[2.375rem] text-xl md:leading-[2.6rem] text-black">
+            <p className="text-xl leading-[2.375rem] text-black md:leading-[2.6rem]">
               We believe in celebrating the achievements of realterns. Our
               platform showcases the outstanding work and innovative ideas of
               Realterns. From project spotlights to success stories, we shine a

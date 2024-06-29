@@ -2,9 +2,9 @@ import { MediumFont } from "@/utils/fonts";
 
 const Header = () => {
   return (
-    <div className="relative mx-[5px] md:mx-4 mt-24 flex flex-col justify-center rounded-[10px] bg-[#F4DFC1]/90 px-[12px] py-8 sm:px-11 md:pb-44 md:pt-24 lg:px-28 xl:px-36">
+    <div className="relative mx-[5px] mt-24 flex flex-col justify-center rounded-[10px] bg-[#F4DFC1]/90 px-[12px] py-8 sm:px-11 md:mx-4 md:pb-44 md:pt-24 lg:px-28 xl:px-36">
       <h1
-        className={`mb-9 text-[36px] leading-[3.8rem] sm:text-[48px] sm:leading-[4.5rem] text-[#333] md:text-[64px] md:leading-[5.6rem] lg:mb-16 ${MediumFont.className} z-30 max-w-[880px]`}
+        className={`mb-9 text-[36px] leading-[3.8rem] text-[#333] sm:text-[48px] sm:leading-[4.5rem] md:text-[64px] md:leading-[5.6rem] lg:mb-16 ${MediumFont.className} z-30 max-w-[880px]`}
       >
         where learning meets impact - Be a part of something bigger
       </h1>

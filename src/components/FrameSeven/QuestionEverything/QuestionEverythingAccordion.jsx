@@ -26,7 +26,7 @@ const QuestionEverythingAccordion = () => {
     setOpenIndex(index === openIndex ? null : index);
   };
   return (
-    <div className="mx-auto mt-4 max-w-[700px] rounded-t-[10px] md:border-[5px] border-[#FAD49B]/50 bg-white px-4 md:px-9 md:py-4">
+    <div className="mx-auto mt-4 max-w-[700px] rounded-t-[10px] border-[#FAD49B]/50 bg-white px-4 md:border-[5px] md:px-9 md:py-4">
       {items.map((item, index) => (
         <div
           key={index}

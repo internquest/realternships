@@ -122,7 +122,7 @@ const Footer = () => {
                     </span>
                     <span style={MediumFont.style}>© Multiverse 2024</span>
                   </div>
-                  <div className="flex items-center mt-6 justify-center gap-x-5 text-3xl text-[#4A5FF7]">
+                  <div className="mt-6 flex items-center justify-center gap-x-5 text-3xl text-[#4A5FF7]">
                     <Link href="">
                       <FaFacebook />
                     </Link>
@@ -155,7 +155,7 @@ const Footer = () => {
             height={1200}
             className="h-16 w-16 object-contain"
           />
-          <div className="flex items-center justify-between w-full">
+          <div className="flex w-full items-center justify-between">
             <span className="text-lg font-medium" style={SemiBoldFont.style}>
               Employers
             </span>
@@ -179,7 +179,7 @@ const Footer = () => {
             </div>
           </div>
 
-          <div className="flex items-center justify-between w-full">
+          <div className="flex w-full items-center justify-between">
             <span className="text-lg font-medium" style={SemiBoldFont.style}>
               Community
             </span>
@@ -210,7 +210,7 @@ const Footer = () => {
               <FaAngleRight />
             </div>
           </div>
-          <div className="flex items-center justify-between w-full">
+          <div className="flex w-full items-center justify-between">
             <span className="text-lg font-medium" style={SemiBoldFont.style}>
               Join the team
             </span>

@@ -1,8 +1,8 @@
-
 const Hero = () => {
   return (
     <div className="flex h-max w-full flex-col">
-      <div className="relative h-screen w-full bg-cover bg-center"
+      <div
+        className="relative h-screen w-full bg-cover bg-center"
         style={{
           backgroundImage:
             'url("https://s3-alpha-sig.figma.com/img/6b40/306f/7393655f7d07b9031029cde29ede14d8?Expires=1720396800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=KJk4gn--VfbvFyu8BSVdkQML9qd4SHj258ICds7u0DLbOi4rjo8o3kzTKQw3SVB4uyogCLvbteDeRVfnkWTu5ZStnDLmF37gsPCJIrQ0nUZSh17i9AHOdDWpyrUBsDYl9hPZdPkExUnx1-S7GnCrdj8rP5zYfOemRLyw0oUOF4qNznSpGTRGOqLTCwxqHj8LZ0tiRjrRKtDt5IgzVTSKviFKk3lZ0BClyH2YH1WyJPcsg-k3yzRRbIyw0vaZR0jq60vjkFngDpxcixqb2IE9EGuHGGv7W0gDayoKEHgDJl1rUczR0HE3TpgBj1ptlgyaEw9WELsZdAMn4O85Ivv9Yg__")',

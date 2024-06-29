@@ -57,7 +57,7 @@ const Manifesto = () => {
               </p>
               <span>Let’s change what’s next.</span>
               <div
-                className={`w-full rounded-lg bg-[#DDFC9D] px-6 py-6 text-[20px] tracking-[0.01em] text-[#2C2C2CCC]/80 sm:px-16 sm:py-10 sm:text-[24px] leading-[2.7rem] lg:py-12 lg:text-[30px] lg:leading-[3.4375rem] ${MediumFont.className}`}
+                className={`w-full rounded-lg bg-[#DDFC9D] px-6 py-6 text-[20px] leading-[2.7rem] tracking-[0.01em] text-[#2C2C2CCC]/80 sm:px-16 sm:py-10 sm:text-[24px] lg:py-12 lg:text-[30px] lg:leading-[3.4375rem] ${MediumFont.className}`}
               >
                 Creating top-notch talent with proven work experience for the
                 ambitious companies at the forefront of innovation to unlock

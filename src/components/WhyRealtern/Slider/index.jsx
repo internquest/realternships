@@ -19,12 +19,12 @@ const FeaturedInternships = () => {
               </span>{" "}
               for intern applicants
             </span>
-            <p className="sm:leading-[3rem] ml-3 text-[1.375rem] leading-[2.5rem]">
+            <p className="ml-3 text-[1.375rem] leading-[2.5rem] sm:leading-[3rem]">
               Increasingly, companies are seeking students who already have
               previous internship experiences or have made significant
               contributions through meaningful projects
             </p>
-            <p className="sm:leading-[3rem] ml-3 text-[1.375rem] leading-[2.5rem]">
+            <p className="ml-3 text-[1.375rem] leading-[2.5rem] sm:leading-[3rem]">
               Here are the requirements for internship roles at some of the
               leading tech companies & startups
             </p>
