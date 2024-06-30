@@ -27,14 +27,15 @@ const MarqueeComponent = () => {
           {content1.map((item, i) => (
             <div
               key={i}
-              className={`cursor-pointer select-none px-5 py-2 text-[40px] lg:text-[48px] tracking-[0.01em] ${BoldFont.className} ${i % 4 === 0
-                ? "text-[#5F71F8]/90"
-                : i % 4 === 1
-                  ? "text-[#5F71F8]/30"
-                  : i % 4 === 2
-                    ? "text-[#5F71F8]/70"
-                    : "text-[#5F71F8]/50"
-                }`}
+              className={`cursor-pointer select-none px-5 py-2 text-[40px] tracking-[0.01em] lg:text-[48px] ${BoldFont.className} ${
+                i % 4 === 0
+                  ? "text-[#5F71F8]/90"
+                  : i % 4 === 1
+                    ? "text-[#5F71F8]/30"
+                    : i % 4 === 2
+                      ? "text-[#5F71F8]/70"
+                      : "text-[#5F71F8]/50"
+              }`}
             >
               {item}
             </div>
@@ -49,14 +50,15 @@ const MarqueeComponent = () => {
           {content2.map((item, i) => (
             <div
               key={i}
-              className={`cursor-pointer select-none px-5 py-2 text-[40px] lg:text-[48px] tracking-[0.01em] ${BoldFont.className} ${i % 4 === 0
-                ? "text-[#5F71F8]/90"
-                : i % 4 === 1
-                  ? "text-[#5F71F8]/30"
-                  : i % 4 === 2
-                    ? "text-[#5F71F8]/70"
-                    : "text-[#5F71F8]/50"
-                }`}
+              className={`cursor-pointer select-none px-5 py-2 text-[40px] tracking-[0.01em] lg:text-[48px] ${BoldFont.className} ${
+                i % 4 === 0
+                  ? "text-[#5F71F8]/90"
+                  : i % 4 === 1
+                    ? "text-[#5F71F8]/30"
+                    : i % 4 === 2
+                      ? "text-[#5F71F8]/70"
+                      : "text-[#5F71F8]/50"
+              }`}
             >
               {item}
             </div>
@@ -66,14 +68,15 @@ const MarqueeComponent = () => {
           {content3.map((item, i) => (
             <div
               key={i}
-              className={`cursor-pointer select-none px-5 py-2 text-[40px] lg:text-[48px] tracking-[0.01em] ${BoldFont.className} ${i % 4 === 0
-                ? "text-[#5F71F8]/90"
-                : i % 4 === 1
-                  ? "text-[#5F71F8]/30"
-                  : i % 4 === 2
-                    ? "text-[#5F71F8]/70"
-                    : "text-[#5F71F8]/50"
-                }`}
+              className={`cursor-pointer select-none px-5 py-2 text-[40px] tracking-[0.01em] lg:text-[48px] ${BoldFont.className} ${
+                i % 4 === 0
+                  ? "text-[#5F71F8]/90"
+                  : i % 4 === 1
+                    ? "text-[#5F71F8]/30"
+                    : i % 4 === 2
+                      ? "text-[#5F71F8]/70"
+                      : "text-[#5F71F8]/50"
+              }`}
             >
               {item}
             </div>

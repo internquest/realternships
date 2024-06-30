@@ -108,11 +108,9 @@ const Footer = () => {
             </div>
             <div className="w-full items-center justify-between">
               <div className="flex flex-col items-start justify-center gap-y-10">
-                <div className="flex w-full items-start justify-between mt-16">
-                  <div className=" text-sm">
-                    <span>
-                      Multiverse • US |{" "}
-                    </span>
+                <div className="mt-16 flex w-full items-start justify-between">
+                  <div className="text-sm">
+                    <span>Multiverse • US | </span>
                   </div>
                   <div className="flex items-center justify-center gap-x-5 text-3xl text-[#4A5FF7]">
                     <Link href="">
@@ -193,9 +191,7 @@ const Footer = () => {
             </div>
             <div className="flex w-full items-center justify-between">
               <Link href="" className="hover:underline">
-                <span>
-                  Diversity, Equity and Inclusion
-                </span>
+                <span>Diversity, Equity and Inclusion</span>
               </Link>
               <FaAngleRight />
             </div>

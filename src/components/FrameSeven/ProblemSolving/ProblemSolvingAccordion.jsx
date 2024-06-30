@@ -26,7 +26,7 @@ const ProblemSolvingAccordion = () => {
     setOpenIndex(index === openIndex ? null : index);
   };
   return (
-    <div className="mx-auto max-w-[850px] rounded-[30px] bg-[#3B3B3A]/80 px-4  md:py-6">
+    <div className="mx-auto max-w-[850px] rounded-[30px] bg-[#3B3B3A]/80 px-4 md:py-6">
       {items.map((item, index) => (
         <div
           key={index}

@@ -111,15 +111,15 @@ function LgNavbar() {
             <div className="hidden lg:block">
               <button className="group">
                 <div
-                  className={`flex w-max cursor-pointer items-center justify-center gap-x-4 rounded-full bg-white p-2 sm:gap-x-6`}
+                  className={`flex w-max cursor-pointer items-center justify-center gap-x-4 rounded-full group-hover:bg-white ${hovered ? "bg-[#4A5FF7]" : "bg-white"} p-2 sm:gap-x-6`}
                 >
                   <span
-                    className={`pl-2 text-base font-medium text-[#4A5FF7] group-hover:text-[#303474] sm:pl-6 sm:text-xl`}
+                    className={`pl-2 text-base font-medium ${hovered ? "text-white" : "text-[#4A5FF7]"} group-hover:text-[#303474] sm:pl-6 sm:text-xl`}
                   >
                     Contact Sales
                   </span>{" "}
                   <div
-                    className={`flex h-8 w-8 items-center justify-center rounded-full bg-[#4A5FF7] text-xl text-white group-hover:bg-[#303474] sm:h-10 sm:w-10`}
+                    className={`flex h-8 w-8 items-center justify-center rounded-full group-hover:text-white ${hovered ? "bg-white" : "bg-[#4A5FF7]"} text-xl ${hovered ? "text-[#4A5FF7]" : "text-white"} group-hover:bg-[#303474] sm:h-10 sm:w-10`}
                   >
                     <FaArrowRightLong />
                   </div>
