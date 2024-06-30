@@ -26,7 +26,7 @@ const QuestionEverythingAccordion = () => {
     setOpenIndex(index === openIndex ? null : index);
   };
   return (
-    <div className="mx-auto mt-4 max-w-[700px] rounded-t-[10px] border-[#FAD49B]/50 bg-white px-4 md:border-[5px] md:px-9 md:py-4">
+    <div className="mx-auto mt-4 max-w-[700px] rounded-t-[10px] border-[#FAD49B]/50 bg-white px-2 md:border-[5px] md:py-4">
       {items.map((item, index) => (
         <div
           key={index}
@@ -37,7 +37,7 @@ const QuestionEverythingAccordion = () => {
             className={`flex w-full justify-between px-4 py-2 text-left text-[22px] text-[#8424FE] md:text-[28px] ${SemiBoldFont.className}`}
           >
             {item.title}
-            <span className="ml-2 rounded-full bg-[#4A5FF7] p-1 md:p-3">
+            <span className="ml-2 rounded-full bg-[#2F09EF]/70 p-1 md:p-3">
               {openIndex === index ? (
                 <svg
                   width="24"

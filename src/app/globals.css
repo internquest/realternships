@@ -29,7 +29,6 @@
   left: 0;
   right: 0;
   padding: 120px 40px 20px 40px;
-  transition: all 500ms;
   max-width: 1400px;
   margin: auto;
 }
@@ -57,7 +56,6 @@
   border-radius: 30px;
   padding: 10px;
   background: rgb(255, 255, 255);
-  transition: all 200ms;
 }
 
 .navdata-bottom {
@@ -67,7 +65,6 @@
   height: 300px;
   border-radius: 30px;
   background: white;
-  transition: all 400ms;
 }
 
 .bg-blur::before {
@@ -93,7 +90,7 @@
 
   to {
     backdrop-filter: blur(10px);
-    background: rgba(255, 255, 255, 0.29);
+    background: rgba(0, 0, 0, 0.144);
   }
 }
 

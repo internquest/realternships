@@ -1,7 +1,7 @@
 import { MediumFont, SemiBoldFont } from "@/utils/fonts";
 const Header = () => {
   return (
-    <div className="flex flex-col items-center justify-center px-4 pb-12 pt-24 md:pb-20 lg:pt-40">
+    <div className="flex flex-col items-center justify-center px-4 pb-12 pt-28 md:pb-20 lg:pt-40">
       <h1
         className={`${MediumFont.className} text-[24px] text-[#544D49] sm:text-[32px] lg:text-[36px]`}
       >

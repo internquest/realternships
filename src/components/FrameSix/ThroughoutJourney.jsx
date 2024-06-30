@@ -5,7 +5,7 @@ const ThroughoutJourney = () => {
     <div className="min-h-screen bg-[#2F09EF]/70 px-4 pb-32">
       <div className="mx-auto max-w-[815px] pt-12 md:pt-24 md:text-center">
         <p
-          className={`${MediumFont.className} text-[23px] leading-[2.5rem] text-white md:text-[28px] md:leading-[2.8rem]`}
+          className={`${MediumFont.className} text-[23px] leading-[3rem] text-white md:text-[28px] md:leading-[3.3rem]`}
         >
           As a Realtern, you'll have the opportunity to work on a diverse range
           of projects at the forefront of innovation, collaborating with teams

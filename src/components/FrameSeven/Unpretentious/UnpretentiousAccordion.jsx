@@ -26,7 +26,7 @@ const UnpretentiousAccordion = () => {
     setOpenIndex(index === openIndex ? null : index);
   };
   return (
-    <div className="mx-auto max-w-[700px] rounded-t-[10px] border-[5px] border-[#FAD49B]/50 bg-[#4A5FF7] px-4 text-white md:px-9 md:py-4">
+    <div className="mx-auto max-w-[700px] rounded-t-[10px] border-[5px] border-[#FAD49B]/50 bg-[#4A5FF7] px-2 text-white md:py-4">
       {items.map((item, index) => (
         <div
           key={index}
