@@ -1,8 +1,9 @@
-import { MediumFont, BoldFont } from "@/utils/fonts";
+// import { MediumFont, BoldFont } from "@/utils/fonts";
+import { MediumFont, BoldFont } from '../../utils/fonts'
 
 const Heading = () => {
   return (
-    <div className="z-0 mx-auto flex h-max flex-col items-center justify-center bg-[#f6f6f6] pt-36 lg:rounded-b-[45px]">
+    <div className="z-2 mx-auto flex h-max flex-col items-center justify-center bg-[#f6f6f6] pt-36 lg:rounded-b-[45px]">
       <div className="flex h-max w-full flex-col items-center justify-between gap-y-8 px-4 sm:px-12 lg:gap-y-12 lg:px-16 xl:max-w-[1440px]">
         <h1
           className={`whitespace-nowrap text-[45px] font-black uppercase leading-tight tracking-tighter text-[#2C2C2C]/90 sm:text-[65px] md:text-[82px] lg:text-[105px] lg:tracking-tight xl:text-9xl xl:leading-[150px] 2xl:leading-[180px] ${BoldFont.className}`}

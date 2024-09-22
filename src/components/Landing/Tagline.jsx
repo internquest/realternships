@@ -1,5 +1,7 @@
 import { SemiBoldFont, MediumFont } from "@/utils/fonts";
+import Image from "next/image";
 import Marquee from "react-fast-marquee";
+import leftdoublequote from '../../assets/Landing/leftdoublequote.png'
 const content = ["Learn", "Experience", "Thrive", "Solve", "Build", "Innovate"];
 const Tagline = () => {
   return (
@@ -10,7 +12,7 @@ const Tagline = () => {
         <span
           className={`text-6xl leading-[10px] text-[#2C2C2C]/90 md:text-7xl ${SemiBoldFont.className}`}
         >
-          &ldquo;
+          <Image src={leftdoublequote} alt="" />
         </span>
         <span className="mx-auto max-w-[640px] pl-6 text-[30px] leading-[3.5rem] tracking-[0.01em] sm:leading-normal md:text-[40px] md:leading-[4rem]">
           Realternships empower students with real-time work experience

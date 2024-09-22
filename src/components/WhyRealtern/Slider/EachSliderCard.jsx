@@ -3,7 +3,8 @@ import Image from "next/image";
 
 const EachSliderCard = ({ imgUrl, title, description, subText }) => {
   return (
-    <div className="mx-auto flex h-[430px] w-[315px] flex-col items-center justify-start gap-y-3 overflow-hidden rounded-[10px] bg-white px-4 pb-4 pt-6 text-[#2C2C2C] sm:h-[475px] md:gap-y-5 lg:h-[630px] lg:w-[420px] lg:px-8 lg:pb-0 lg:pt-9">
+
+    <div className="mx-auto w-full max-w-[450px]  flex-shrink-0 flex   flex-col items-center justify-start gap-y-3  rounded-[10px] bg-white px-4 pb-4 pt-6 text-[#2C2C2C]  md:gap-y-5 min-h-[500px]  lg:px-8 lg:pb-0 lg:pt-9">
       <Image
         src={imgUrl}
         alt="photo"
@@ -25,6 +26,7 @@ const EachSliderCard = ({ imgUrl, title, description, subText }) => {
         dangerouslySetInnerHTML={{ __html: subText }}
       ></p>
     </div>
+
   );
 };
 

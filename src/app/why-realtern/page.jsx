@@ -9,7 +9,7 @@ import SliderComponent from "@/components/WhyRealtern/Slider";
 
 const WhyRealtern = () => {
   return (
-    <div>
+    <div className="overflow-hidden">
       <Hero />
       <MarqueeComponent />
       <Banner />

@@ -14,17 +14,17 @@ import { MediumFont } from "@/utils/fonts";
 
 const Footer = () => {
   return (
-    <div className="h-auto w-full bg-[#F8F7F3]">
+    <div className="h-auto w-full bg-[#F8F7F3] overflow-hidden">
       <div className="mx-auto h-max w-full px-6 pt-10 lg:px-16 xl:w-[1150px] xl:px-0 2xl:w-[1311px]">
         <div className="hidden h-max w-full lg:inline-block">
           <div className="flex w-full flex-col px-4 pb-16 pt-10 lg:px-0 2xl:pt-0">
-            <div className="flex w-full items-start justify-between">
+            <div className="flex w-full items-start ">
               <Image
                 src={footer}
                 alt="image"
-                className="h-16 w-16 object-contain"
+                className="h-16 w-16 mr-20 object-contain"
               />
-              <div className="flex w-max items-start justify-end gap-x-6 lg:gap-x-20">
+              <div className="flex w-max items-start justify-end gap-x-3 lg:gap-x-10">
                 <div
                   style={MediumFont.style}
                   className="text-lg hover:underline"
@@ -36,10 +36,10 @@ const Footer = () => {
                     Candidates
                   </span>
                   <Link href="" className="hover:underline">
-                    <span className="text-[17px]">Start your career</span>
+                    <h1 className="text-[16px] btl:whitespace-nowrap">Start your career</h1>
                   </Link>
                   <Link href="" className="hover:underline">
-                    <span className="text-[17px]">Learn new skills</span>
+                    <span className="text-[16px] btl:whitespace-nowrap">Learn new skills</span>
                   </Link>
                 </div>
                 <div
@@ -53,13 +53,13 @@ const Footer = () => {
                     About
                   </span>
                   <Link href="" className="hover:underline">
-                    <span className="text-[17px]">Our Mission</span>
+                    <span className="text-[16px]">Our Mission</span>
                   </Link>
                   <Link href="" className="hover:underline">
-                    <span className="text-[17px]">Blog</span>
+                    <span className="text-[16px] ">Blog</span>
                   </Link>
                   <Link href="" className="hover:underline">
-                    <span className="text-[17px]">
+                    <span className="text-[16px] btl:whitespace-pre-wrap">
                       Diversity, Equity and Inclusion
                     </span>
                   </Link>
@@ -202,17 +202,17 @@ const Footer = () => {
             </span>
             <FaAngleRight />
           </div>
-          <div className="flex w-full flex-col gap-y-3">
+          <div className="hidden w-full flex-col btl:flex  gap-y-3">
             <div className="flex w-full items-center justify-start gap-x-20">
-              <Link href="" className="hover:underline">
+              <Link href="" className="hover:underline btl:flex-grow btl:flex-shrink btl:basis-[45%]">
                 <span>Privacy Policy</span>
               </Link>
-              <Link href="" className="hover:underline">
+              <Link href="" className="hover:underline btl:flex-grow btl:flex-shrink btl:basis-[45%]">
                 <span>Contact Us</span>
               </Link>
             </div>
             <div className="flex w-full items-center justify-start gap-x-20">
-              <Link href="" className="hover:underline">
+              <Link href="" className="hover:underline btl:flex-grow btl:flex-shrink btl:basis-[45%]">
                 <span>Press Enquiries</span>
               </Link>
               <Link href="" className="hover:underline">
@@ -220,10 +220,32 @@ const Footer = () => {
               </Link>
             </div>
             <div className="flex w-full items-center justify-start gap-x-6">
-              <Link href="" className="hover:underline">
+              <Link href="" className="hover:underline btl:flex-grow btl:flex-shrink btl:basis-[45%]">
                 <span>Privacy Settings</span>
               </Link>
             </div>
+          </div>
+          <div className="flex w-full  justify-between btl:hidden flex-wrap gap-[1rem]">
+
+            <Link href="" className="hover:underline whitespace-nowrap flex-grow w-fit flex-shrink basis-[45%]">
+              Privacy Policy
+            </Link>
+            <Link href="" className="hover:underline whitespace-nowrap flex-grow w-fit flex-shrink basis-[45%]">
+              Contact Us
+            </Link>
+
+            <Link href="" className="hover:underline whitespace-nowrap flex-grow w-fit flex-shrink basis-[45%]">
+              Press Enquiries
+            </Link>
+            <Link href="" className="hover:underline whitespace-nowrap w-fit flex-grow  flex-shrink basis-[45%] ">
+              Terms
+            </Link>
+
+
+            <Link href="" className="hover:underline whitespace-nowrap flex-grow w-fit flex-shrink basis-[45%]">
+              Privacy Settings
+            </Link>
+
           </div>
           <div className="flex w-full items-center justify-center gap-x-5 text-3xl text-[#4A5FF7]">
             <Link href="">

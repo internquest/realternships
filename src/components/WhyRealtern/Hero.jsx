@@ -1,7 +1,7 @@
 const Hero = () => {
   return (
-    <div className="flex h-max w-full flex-col">
-      <div
+    <div className="flex h-max w-full flex-col mt-32">
+      {/* <div
         className="relative h-screen w-full bg-cover bg-center"
         style={{
           backgroundImage:
@@ -17,7 +17,7 @@ const Hero = () => {
         <div className="absolute -bottom-[0.5px] left-[14rem] h-12 w-12 rounded-full bg-white sm:left-[28.5rem] sm:h-16 sm:w-16 md:left-[35rem] lg:left-[42rem] xl:left-[50.375rem] xl:h-20 xl:w-20">
           {" "}
         </div>
-      </div>
+      </div> */}
       <span className="mt-5 w-full pl-2 text-lg !leading-loose tracking-[-0.01em] text-[#2C2C2C] sm:w-[555px] sm:pl-4 sm:text-xl md:ml-6 md:w-[40rem] md:text-2xl lg:ml-20 lg:mt-8 xl:mt-0">
         In today's competitive job market, simply having a portfolio of basic
         projects is no longer enough to stand out or land that dream internship

@@ -7,6 +7,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      screens: {
+        btl: { 'min': '960px' }
+      },
       keyframes: {
         "slide-down": {
           "0%": { transform: "translateY(-100%)" },
