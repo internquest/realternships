@@ -1,4 +1,5 @@
 import { MediumFont } from "@/utils/fonts";
+import Textanimation from "./Textanimation";
 
 const Hero = () => {
   return (
@@ -14,10 +15,12 @@ const Hero = () => {
           <h2
             className={`${MediumFont.className} max-w-[500px] text-[30px] leading-[3.2rem] text-[#251C29]/90 md:text-[35px] lg:text-[40px] lg:leading-[4rem]`}
           >
-            Realtern as{" "}
-            <span className="rounded-[20px] bg-[#DDFC9D] px-2 py-1 md:px-4">
+            Realtern as
+            <Textanimation />
+            {/* <span className="rounded-[20px] bg-[#DDFC9D] px-2 py-1 md:px-4">
               ML Engineer{" "}
-            </span>
+            </span> */}
+
             with real companies to gain real work experience
           </h2>
           <p
