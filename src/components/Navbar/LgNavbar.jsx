@@ -18,12 +18,16 @@ function LgNavbar() {
   const [hoveredlinknum, setHoveredLinknum] = useState(0)
   const [hoverprevlinknum, sethoverprevlinknum] = useState(0)
   const [initialhover, setIntitialhover] = useState(false)
-  const [displayData, setDisplayData] = useState(<CommonQuestionsMenu />);
+  const [displayData, setDisplayData] = useState(null);
   const [height, setHeight] = useState(0);
   const [clipstate, setClipstate] = useState('')
   const navdiv = useRef(null)
 
   const { width: windowWidth } = useWindowSize()
+
+  useEffect(() => {
+    setDisplayData(<CommonQuestionsMenu />)
+  }, [])
 
   useLayoutEffect(() => {
     const navdivdim = navdiv.current.getBoundingClientRect()
@@ -38,11 +42,12 @@ function LgNavbar() {
   }, [windowWidth])
 
   useEffect(() => {
+    console.log('shhova');
     const navdataElement = document.getElementById("navdata");
     if (navdataElement) {
       setHeight(navdataElement.offsetHeight);
     }
-  }, [displayData]);
+  }, [hoveredlinknum]);
 
 
   const clipanim = {
@@ -73,8 +78,8 @@ function LgNavbar() {
       display: 'block'
     }
   }
-  console.log(initialhover);
-  console.log(hoverprevlinknum);
+  // console.log(initialhover);
+  // console.log(hoverprevlinknum);
 
 
   const linkhover = {
@@ -160,7 +165,7 @@ function LgNavbar() {
       }
     }
   }
-
+  console.log(hovered);
   return (
     <>
       {/* <div className={hovered ? "bg-blur" : ""}></div> */}
@@ -284,7 +289,7 @@ function LgNavbar() {
               </div>
             </div>
             <div className="w-[calc(100%+48px)] h-auto  absolute border-0 -top-[24px] left-[-24px]   z-[-1] ">
-              <motion.div style={{ transitionDuration: '.6s', clipPath: clipstate }} initial='initial' animate={`${hovered ? 'animate' : ''}`} variants={clipanim} className={`   overflow-hidden bg-white pt-24 w-full rounded-[4rem] `}>
+              <motion.div style={{ transitionDuration: '.6s', clipPath: clipstate }} initial='initial' animate={`${hovered ? 'animate' : ''}`} variants={clipanim} className={`   overflow-hidden  bg-white pt-24 w-full rounded-[4rem] `}>
 
 
 

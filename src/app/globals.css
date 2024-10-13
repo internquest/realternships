@@ -23,29 +23,38 @@
   background: #4a5ff7;
   cursor: pointer;
 } */
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-container {
+  /* @apply mx-auto relative overflow-hidden z-[1] py-0 px-15 */
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  display: flex;
+
+  padding: 0 60px !important
+}
+
+.swiper-slide {
+  width: 60%;
+}
 
 #navdata {
-  position: absolute;
-  left: 0;
-  right: 0;
-  padding: 40px 32px 32px 40px;
-  max-width: 1400px;
-  margin: auto;
+  display: none;
 }
 
-@media (max-width: 768px) {
-  #navdata {
-    display: none;
-  }
-
-  .navdata-top {
-    display: none;
-  }
-
-  .navdata-bottom {
-    display: none;
-  }
+.navdata-top {
+  display: none;
 }
+
+.navdata-bottom {
+  display: none;
+}
+
 
 .navdata-top {
   /* top: 20px; */
