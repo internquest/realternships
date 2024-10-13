@@ -44,10 +44,13 @@ function LgNavbar() {
   useEffect(() => {
     console.log('shhova');
     const navdataElement = document.getElementById("navdata");
+    console.log(navdataElement.getBoundingClientRect());
+
     if (navdataElement) {
       setHeight(navdataElement.offsetHeight);
     }
   }, [hoveredlinknum]);
+  console.log(height);
 
 
   const clipanim = {

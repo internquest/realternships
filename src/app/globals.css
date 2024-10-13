@@ -44,28 +44,15 @@
 }
 
 #navdata {
-  display: none;
-}
-
-.navdata-top {
-  display: none;
-}
-
-.navdata-bottom {
-  display: none;
-}
-
-
-.navdata-top {
-  /* top: 20px; */
   position: absolute;
   left: 0;
   right: 0;
-  /* height: 100px; */
-  border-radius: 30px;
-  /* padding: 10px; */
-  background: rgb(255, 255, 255);
+
+  padding: 40px 32px 32px 40px;
+  max-width: 1400px;
+  margin: auto;
 }
+
 
 .clipping {
   clip-path: xywh(24px 24px 948.65625px 81.328125px round 2.5rem);

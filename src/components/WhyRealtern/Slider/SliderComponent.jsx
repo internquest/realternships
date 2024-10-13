@@ -1,12 +1,14 @@
 'use client'
 import React, { useRef, useState } from 'react'
-import { Swiper, SwiperSlide, useSwiperSlide } from 'swiper/react'
+import { Swiper, SwiperSlide } from 'swiper/react'
 import 'swiper/css';
 import 'swiper/css/navigation';
 import Card from "./EachSliderCard";
 import data from "./CardData";
 import { motion } from 'framer-motion'
 import { Navigation, Mousewheel, Keyboard } from 'swiper/modules';
+import { useWindowSize } from '@uidotdev/usehooks';
+
 
 const SliderComponent = () => {
   const prevRef = useRef(null);
@@ -14,6 +16,8 @@ const SliderComponent = () => {
   const [buttonleft, setbuttonleft] = useState(false)
   const [buttonright, setbuttonright] = useState(false)
   const [buttonClick, setButtonClick] = useState(false)
+
+  const { width: windowWidth } = useWindowSize()
 
   const arrow = {
     hover: {
@@ -25,11 +29,19 @@ const SliderComponent = () => {
     },
 
   }
-  let transition = buttonClick ? ('550ms') : ('0ms')
+
+
+
+  const handleclick = () => {
+    setButtonClick(true)
+    setTimeout(() => {
+      setButtonClick(false)
+    }, 550)
+  }
   return (
     <>
       <Swiper
-        slidesPerView={1.5}
+        slidesPerView={windowWidth > 768 ? 1.5 : 1}
         centeredSlides={true}
         spaceBetween={30}
         loop={true}
@@ -77,12 +89,12 @@ const SliderComponent = () => {
 
 
         <motion.div ref={prevRef} whileHover='hover' onMouseEnter={() => setbuttonleft(true)} onMouseLeave={() => setbuttonleft(false)} className='absolute top-[50%] translate-y-[-50%] z-[2] left-[calc(50%-366.5px)] tablet:hidden '>
-          <motion.button style={buttonClick ? { display: 'none', transitionDuration: '.2s' } : { display: 'block' }} className={`transition-[background-color] duration-[.2s] ${buttonleft ? 'arrowdark' : 'arrowbutton'}   border-solid border-[1px] border-[#fff]   bg-transparent   scale-x-[-1] rounded-[50%] w-[60px] h-[60px] bg-no-repeat bg-[50%] leading-[1.15] m-0  `} variants={arrow} >
+          <motion.button onClick={handleclick} style={buttonClick ? { display: 'none', transitionDuration: '.2s' } : { display: 'block' }} className={`transition-[background-color] duration-[.2s] ${buttonleft ? 'arrowdark' : 'arrowbutton'}   border-solid border-[1px] border-[#fff]   bg-transparent   scale-x-[-1] rounded-[50%] w-[60px] h-[60px] bg-no-repeat bg-[50%] leading-[1.15] m-0  `} variants={arrow}  >
             {/* <Image src={arrowed} alt="" width={60} height={60} /> */}
           </motion.button>
         </motion.div>
         <motion.div ref={nextRef} whileHover='hover' onMouseEnter={() => setbuttonright(true)} onMouseLeave={() => setbuttonright(false)} className='absolute top-[50%] translate-y-[-50%] z-[2] left-auto right-[calc(50%-366.5px)] tablet:hidden '>
-          <motion.button style={buttonClick ? { display: 'none', transitionDuration: '.2s' } : { display: 'block' }} className={`  border-solid border-[1px] duration-[.2s] border-[#fff]  bg-transparent  ${buttonright ? 'arrowdark' : 'arrowbutton'} transition-colors   rounded-[50%] w-[60px] h-[60px] bg-no-repeat bg-[50%] leading-[1.15] m-0 `} variants={arrow} >
+          <motion.button onClick={handleclick} style={buttonClick ? { display: 'none', transitionDuration: '.2s' } : { display: 'block' }} className={`  border-solid border-[1px] duration-[.2s] border-[#fff]  bg-transparent  ${buttonright ? 'arrowdark' : 'arrowbutton'} transition-colors   rounded-[50%] w-[60px] h-[60px] bg-no-repeat bg-[50%] leading-[1.15] m-0 `} variants={arrow} >
             {/* <Image src={arrowed} alt="" width={60} height={60} /> */}
           </motion.button>
         </motion.div>
