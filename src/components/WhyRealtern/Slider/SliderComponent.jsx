@@ -1,5 +1,5 @@
 'use client'
-import React, { useRef, useState } from 'react'
+import React, { use, useEffect, useRef, useState } from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import 'swiper/css';
 import 'swiper/css/navigation';
@@ -13,11 +13,14 @@ import { useWindowSize } from '@uidotdev/usehooks';
 const SliderComponent = () => {
   const prevRef = useRef(null);
   const nextRef = useRef(null);
+  const mobileprev = useRef(null)
+  const mobilenext = useRef(null)
   const [buttonleft, setbuttonleft] = useState(false)
   const [buttonright, setbuttonright] = useState(false)
   const [buttonClick, setButtonClick] = useState(false)
-
+  const [widthvalue, setwidthvalue] = useState(0)
   const { width: windowWidth } = useWindowSize()
+
 
   const arrow = {
     hover: {
@@ -29,7 +32,12 @@ const SliderComponent = () => {
     },
 
   }
+  useEffect(() => {
+    // console.log(windowWidth);
+    setwidthvalue(windowWidth)
+  }, [windowWidth])
 
+  console.log(widthvalue);
 
 
   const handleclick = () => {
@@ -40,87 +48,136 @@ const SliderComponent = () => {
   }
   return (
     <>
-      <Swiper
-        slidesPerView={windowWidth > 768 ? 1.5 : 1}
-        centeredSlides={true}
-        spaceBetween={30}
-        loop={true}
-        initialSlide={2}
-        speed={800}
-        navigation={{
-          prevEl: prevRef.current,
-          nextEl: nextRef.current,
-        }}
-        modules={[Navigation]}
-
-        className="swiper-container"
-      >
-        {/* <SwiperSlide>
-          <Card
-            imgUrl={(data[5]).img}
-            title={(data[5]).title}
-            description={(data[5]).desc}
-            subText={(data[5]).sub}
-          />
-        </SwiperSlide>
-        <SwiperSlide>
-          <Card
-            imgUrl={(data[4]).img}
-            title={(data[4]).title}
-            description={(data[4]).desc}
-            subText={(data[4]).sub}
-          />
-        </SwiperSlide> */}
-
-        {
-          data.map((item, i) => (
-            <SwiperSlide is>
-              <Card
-
-                imgUrl={item.img}
-                title={item.title}
-                description={item.desc}
-                subText={item.sub}
-              />
-            </SwiperSlide>
-          ))
-
-        }
 
 
-        <motion.div ref={prevRef} whileHover='hover' onMouseEnter={() => setbuttonleft(true)} onMouseLeave={() => setbuttonleft(false)} className='absolute top-[50%] translate-y-[-50%] z-[2] left-[calc(50%-366.5px)] tablet:hidden '>
-          <motion.button onClick={handleclick} style={buttonClick ? { display: 'none', transitionDuration: '.2s' } : { display: 'block' }} className={`transition-[background-color] duration-[.2s] ${buttonleft ? 'arrowdark' : 'arrowbutton'}   border-solid border-[1px] border-[#fff]   bg-transparent   scale-x-[-1] rounded-[50%] w-[60px] h-[60px] bg-no-repeat bg-[50%] leading-[1.15] m-0  `} variants={arrow}  >
-            {/* <Image src={arrowed} alt="" width={60} height={60} /> */}
-          </motion.button>
-        </motion.div>
-        <motion.div ref={nextRef} whileHover='hover' onMouseEnter={() => setbuttonright(true)} onMouseLeave={() => setbuttonright(false)} className='absolute top-[50%] translate-y-[-50%] z-[2] left-auto right-[calc(50%-366.5px)] tablet:hidden '>
-          <motion.button onClick={handleclick} style={buttonClick ? { display: 'none', transitionDuration: '.2s' } : { display: 'block' }} className={`  border-solid border-[1px] duration-[.2s] border-[#fff]  bg-transparent  ${buttonright ? 'arrowdark' : 'arrowbutton'} transition-colors   rounded-[50%] w-[60px] h-[60px] bg-no-repeat bg-[50%] leading-[1.15] m-0 `} variants={arrow} >
-            {/* <Image src={arrowed} alt="" width={60} height={60} /> */}
-          </motion.button>
-        </motion.div>
+      {
+        widthvalue >= 768 ?
+          (
+            <Swiper
+              slidesPerView={1.5}
+              centeredSlides={true}
+              spaceBetween={30}
+              loop={true}
+              initialSlide={2}
+              speed={800}
+              navigation={
+
+                {
+                  prevEl: prevRef.current,
+                  nextEl: nextRef.current,
+                }
+              }
+              modules={[Navigation]}
+
+              className="swiper-container"
+              key={1}
+            >
 
 
-        {/* <SwiperSlide>
-          <Card
-            imgUrl={(data[0]).img}
-            title={(data[0]).title}
-            description={(data[0]).desc}
-            subText={(data[0]).sub}
-          />
-        </SwiperSlide>
-        <SwiperSlide>
-          <Card
-            imgUrl={(data[1]).img}
-            title={(data[1]).title}
-            description={(data[1]).desc}
-            subText={(data[1]).sub}
-          />
-        </SwiperSlide> */}
+              {
+                data.map((item, i) => (
+                  <SwiperSlide >
+                    <Card
+
+                      imgUrl={item.img}
+                      title={item.title}
+                      description={item.desc}
+                      subText={item.sub}
+                    />
+                  </SwiperSlide>
+                ))
+
+              }
 
 
 
+              <motion.div ref={prevRef} whileHover='hover' onMouseEnter={() => setbuttonleft(true)} onMouseLeave={() => setbuttonleft(false)} className='absolute top-[50%] translate-y-[-50%] z-[2] left-[calc(50%-366.5px)] tablet:hidden '>
+                <motion.button onClick={handleclick} style={buttonClick ? { display: 'none', transitionDuration: '.2s' } : { display: 'block' }} className={`transition-[background-color] duration-[.2s] ${buttonleft ? 'arrowdark' : 'arrowbutton'}   border-solid border-[1px] border-[#fff]   bg-transparent   scale-x-[-1] rounded-[50%] w-[60px] h-[60px] bg-no-repeat bg-[50%] leading-[1.15] m-0  `} variants={arrow}  >
+                  {/* <Image src={arrowed} alt="" width={60} height={60} /> */}
+                </motion.button>
+              </motion.div>
+              <motion.div ref={nextRef} whileHover='hover' onMouseEnter={() => setbuttonright(true)} onMouseLeave={() => setbuttonright(false)} className='absolute top-[50%] translate-y-[-50%] z-[2] left-auto right-[calc(50%-366.5px)] tablet:hidden '>
+                <motion.button onClick={handleclick} style={buttonClick ? { display: 'none', transitionDuration: '.2s' } : { display: 'block' }} className={`  border-solid border-[1px] duration-[.2s] border-[#fff]  bg-transparent  ${buttonright ? 'arrowdark' : 'arrowbutton'} transition-colors   rounded-[50%] w-[60px] h-[60px] bg-no-repeat bg-[50%] leading-[1.15] m-0 `} variants={arrow} >
+                  {/* <Image src={arrowed} alt="" width={60} height={60} /> */}
+                </motion.button>
+              </motion.div>
+            </Swiper>
 
-      </Swiper>
+          ) :
+          (
+            <Swiper
+              slidesPerView={1}
+              centeredSlides={true}
+              spaceBetween={30}
+              loop={true}
+              initialSlide={2}
+              speed={800}
+              navigation={
+
+                {
+                  prevEl: mobileprev.current,
+                  nextEl: mobilenext.current,
+                }
+              }
+              modules={[Navigation]}
+
+              className="swiper-container"
+              key={2}
+            >
+
+
+              {
+                data.map((item, i) => (
+                  <SwiperSlide >
+                    <Card
+
+                      imgUrl={item.img}
+                      title={item.title}
+                      description={item.desc}
+                      subText={item.sub}
+                    />
+                  </SwiperSlide>
+                ))
+
+              }
+              <div className=' mt-[40px] py-0 px-5  max-w-[1440px] mx-auto w-full'>
+                <div className='flex mx-[-20px] '>
+                  <div className=' basis-[25%] max-w-[25%] flex-grow-0 flex-shrink-0'>
+                    <motion.button ref={mobileprev} whileHover='hover' onMouseEnter={() => setbuttonleft(true)} onMouseLeave={() => setbuttonleft(false)} style={buttonClick ? { display: 'none', transitionDuration: '.2s' } : { display: 'block' }} className={`transition-[background-color] duration-[.2s] border-solid border-[1px] border-[#fff] ${buttonleft ? 'arrowdark' : 'arrowbutton'}   bg-transparent   scale-x-[-1] rounded-[50%] w-[60px] h-[60px] tablet:bg-[size:45%] tablet:w-[40px] tablet:h-[40px] bg-no-repeat bg-[50%] leading-[1.15] m-0  `} variants={arrow}  >
+                    </motion.button>
+                  </div>
+                  <div className='flex-grow-0 flex-shrink-0 px-[20px] basis-[50%] max-w-[50%] self-center text-center'>
+                    <p className='text-[#fff] transition-colors duration-[.4s] text-[.875rem] font-normal m-0'>
+                      {/* {current} of 5 */}
+                    </p>
+                  </div>
+                  <div className='px-[20px] basis-[25%] max-w-[25%] flex-grow-0 flex-shrink-0 '>
+                    <motion.button ref={mobilenext} whileHover='hover' onMouseEnter={() => setbuttonright(true)} onMouseLeave={() => setbuttonright(false)} style={buttonClick ? { display: 'none', transitionDuration: '.2s' } : { display: 'block' }} className={`  border-solid border-[1px] duration-[.2s] border-[#fff] ${buttonright ? 'arrowdark' : 'arrowbutton'}  bg-transparent transition-colors   rounded-[50%] w-[60px] h-[60px] tablet:bg-[size:45%] tablet:w-[40px] tablet:h-[40px] bg-no-repeat bg-[50%] leading-[1.15] m-0 `} variants={arrow} >
+                    </motion.button>
+                  </div>
+                </div>
+              </div>
+            </Swiper>
+
+
+
+
+
+          )
+      }
+
+
+
+
+
+
+
+
+
+
+
+
+
     </>
   )
 }
